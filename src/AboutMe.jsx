@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import image from "/src/pics/MyPic.jpeg";
+import image2 from "/src/pics/Gestaltung.png";
 import pdf from "/src/pdfs/Gestaltung.pdf";
 
 const AboutMe = ({ onBack }) => {
@@ -19,12 +20,20 @@ const text4 = "Außerhalb des Studiums möchte ich React Native lernen, darum ha
 const text5 = "Ich habe während meiner Studienzeit an verschiedenen Projekten gearbeitet, darunter die Entwicklung von Webanwendungen und Spielen.";
 
 const gestTitel = "Darstellung des Bildes der Gestaltung";
-const gest1 = "Im ersten Semester meines Studiums der Medieninformatik entstand dieses Portfolio im Modul Gestaltung 1.";
-const gest2 = "Der Einstieg in das Portfolio beginnt mit den Gestaltgesetzen der Wahrnehmung.";
-const gest3 = "Darauf aufbauend beschäftigte ich mich mit verschiedenen Kontrasten.";
-const gest4 = "Ein weiterer Schwerpunkt lag auf Perspektive und Raumdarstellung.";
-const gest5 = "Im Bereich Typografie und Buchstabenplakate experimentierte ich mit der Gestaltung von Formen aus Buchstaben. Aus einzelnen Buchstaben entstanden Objekte und visuelle Motive, wodurch ich ein besseres Verständnis für die Verbindung zwischen Schrift und Bild entwickelte."
+const gest1 = [
+  "Im ersten Semester meines Studiums der Medieninformatik entstand dieses Portfolio im Modul Gestaltung 1. Der Einstieg in das Portfolio beginnt mit den Gestaltgesetzen der Wahrnehmung, wie dem Prinzip der Prägnanz, der Ähnlichkeit oder der gemeinsamen Region. Mithilfe einfacher geometrischer Formen habe ich untersucht, wie Menschen visuelle Elemente automatisch gruppieren und interpretieren. Diese Übungen haben mir gezeigt, wie stark unsere Wahrnehmung durch visuelle Strukturen beeinflusst wird.",
 
+  "Darauf aufbauend beschäftigte ich mich mit verschiedenen Kontrasten, beispielsweise Form-, Bewegungs-, Richtungs- oder Intensitätskontrasten. Durch unterschiedliche Größen, Positionen und Formen entstand ein Gefühl von Spannung und Dynamik innerhalb der Gestaltung. Ziel dieser Aufgaben war es, ein besseres Verständnis dafür zu entwickeln, wie visuelle Gegensätze Aufmerksamkeit erzeugen und Kompositionen interessanter machen.",
+
+  "Ein weiterer Schwerpunkt lag auf Perspektive und Raumdarstellung. Hier habe ich verschiedene Perspektivarten wie Isometrie, Zentralperspektive, Zwei- und Drei-Punkt-Perspektive untersucht. Durch diese Übungen lernte ich, wie dreidimensionale Räume auf einer zweidimensionalen Fläche dargestellt werden können und welche Wirkung unterschiedliche Perspektiven auf die Wahrnehmung eines Objekts haben.",
+
+  "Im Bereich Typografie und Buchstabenplakate experimentierte ich mit der Gestaltung von Formen aus Buchstaben. Aus einzelnen Buchstaben entstanden Objekte und visuelle Motive, wodurch ich ein besseres Verständnis für die Verbindung zwischen Schrift und Bild entwickelte.",
+
+  "Ein weiteres Kapitel widmete sich den Farbenkontrasten. Hier untersuchte ich verschiedene Farbwirkungen, wie Kalt-Warm-Kontraste, Hell-Dunkel-Kontraste oder Komplementärkontraste. Die Gestaltung zeigte, wie Farben Emotionen erzeugen, Hierarchien schaffen und die Wahrnehmung eines Designs stark beeinflussen können.",
+
+  "Besonders spannend war die Aufgabe, Songs visuell zu interpretieren. Dabei habe ich Musikstücke von Künstlern wie The Weeknd, Post Malone oder Michael Jackson grafisch umgesetzt. Ziel war es, die Stimmung und Bedeutung der Songs mithilfe von Farben, Formen und Typografie visuell darzustellen.",
+
+] ;
 
 
 return (
@@ -63,12 +72,17 @@ return (
 
     <h1 className="text-2xl font-semibold mb-4">Gestaltung</h1>
 
-    <img src={image} alt="Gestaltung" className="mx-auto mb-6 rounded"/>
+    <img src={image2} alt="Gestaltung" className="mx-auto mb-6 rounded"/>
 
     <h2 className="text-gray-300 mb-6">{gestTitel}</h2>
 
     <ul className="text-gray-300 mb-4 list-disc pl-6">
-      <li>{gest1}</li>
+      <p>{gest1[0]}</p>
+      <p>{gest1[1]}</p>
+      <p>{gest1[2]}</p>
+      <p>{gest1[3]}</p>
+      <p>{gest1[4]}</p>
+
 
       <button
         onClick={() => setShowPdf(true)}
@@ -77,10 +91,7 @@ return (
         PDF anschauen
       </button>
 
-      <li>{gest2}</li>
-      <li>{gest3}</li>
-      <li>{gest4}</li>
-      <li>{gest5}</li>
+    
     </ul>
 
   </div>
