@@ -23,6 +23,9 @@ const gest1 = "Im ersten Semester meines Studiums der Medieninformatik entstand 
 const gest2 = "Der Einstieg in das Portfolio beginnt mit den Gestaltgesetzen der Wahrnehmung.";
 const gest3 = "Darauf aufbauend beschäftigte ich mich mit verschiedenen Kontrasten.";
 const gest4 = "Ein weiterer Schwerpunkt lag auf Perspektive und Raumdarstellung.";
+const gest5 = "Im Bereich Typografie und Buchstabenplakate experimentierte ich mit der Gestaltung von Formen aus Buchstaben. Aus einzelnen Buchstaben entstanden Objekte und visuelle Motive, wodurch ich ein besseres Verständnis für die Verbindung zwischen Schrift und Bild entwickelte."
+
+
 
 return (
 <>
@@ -77,6 +80,7 @@ return (
       <li>{gest2}</li>
       <li>{gest3}</li>
       <li>{gest4}</li>
+      <li>{gest5}</li>
     </ul>
 
   </div>
