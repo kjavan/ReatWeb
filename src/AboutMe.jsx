@@ -124,6 +124,49 @@ return (
   </div>
 )}
 
+
+<div className="min-h-screen flex items-center justify-center p-4 bg-gray-900 text-white">
+  <div className="max-w-2xl p-6 bg-gray-800 rounded shadow-lg">
+
+    <h1 className="text-2xl font-semibold mb-4">Bachelorarbeit</h1>
+
+    <img src={image2} alt="Gestaltung" className="mx-auto mb-6 rounded"/>
+
+    <h2 className="text-gray-300 mb-6">{gestTitel}</h2>
+
+    <ul className="text-gray-300 mb-4 list-disc pl-6">
+      <p>{gest1[0]}</p>
+      <p>{gest1[1]}</p>
+      <p>{gest1[2]}</p>
+      <p>{gest1[3]}</p>
+      <p>{gest1[4]}</p>
+
+
+      <button
+        onClick={() => setShowPdf(true)}
+        className="bg-white text-black px-4 py-2 rounded my-4"
+      >
+        PDF anschauen
+      </button>
+
+    
+    </ul>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </>
 );
 };
